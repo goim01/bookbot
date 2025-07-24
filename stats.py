@@ -15,4 +15,8 @@ def num_of_characters(path):
             count_dict[each_char] = 1
         else:
             count_dict[each_char] += 1
+
+    for each_char in lower_book:
+        count_dict[each_char] = 1 if each_char not in count_dict else count_dict[each_char] + 1
+
     return count_dict
