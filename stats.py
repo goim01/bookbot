@@ -2,11 +2,11 @@ def get_book_text(path):
     with open(path) as f:
         return f.read()
 
-def num_of_words(path):
+def count_words(path):
         book_text = get_book_text(path)
         return len(book_text.split())
 
-def num_of_characters(path):
+def count_characters(path):
     book_text = get_book_text(path)
     lower_book = book_text.lower()
     count_dict = {}
